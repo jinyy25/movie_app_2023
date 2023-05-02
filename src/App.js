@@ -3,6 +3,7 @@ import React from "react";
 import axios from "axios";
 import Movie from "./Movie"; //movie.js 내용 가져옴
 import "./App.css";
+import "./Home.css";
 
 
 // #3.3 Fetching Movies from API
@@ -69,6 +70,7 @@ class App extends React.Component {
                     title={movie.title}
                     summary={movie.summary}
                     poster={movie.medium_cover_image}
+                    genres={movie.genres}
                   />
                 ))
               }
